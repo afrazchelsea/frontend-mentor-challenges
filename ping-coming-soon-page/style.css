@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:wght@300,600,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+  margin: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 span {
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+}
+
+input {
+  margin-top: 25px;
+  padding: 13px;
+  font-size: 15px;
+  border-radius: 40px;
+  width: 350px;
+  font-family: "Libre Franklin", sans-serif;
+  border: 1px solid hsl(223, 100%, 88%);
+}
+
+input::placeholder {
+  color: hsl(223, 100%, 88%);
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+input.error {
+  /* margin-top: 10px; */
+  border-color: hsl(354, 100%, 66%);
+}
+
+input.error::placeholder {
+  color: hsl(354, 100%, 66%);
+}
+
+form small {
+  color: hsl(354, 100%, 66%);
+  display: none;
+  font-style: italic;
+  z-index: 100;
+  margin: 0 20px 40px;
+}
+
+button {
+  width: 175px;
+  padding: 13px;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 15px;
+  border-radius: 40px;
+  margin-left: 20px;
+  font-weight: 600;
+  background-color: hsl(223, 87%, 63%);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 5px 5px hsl(223, 100%, 88%);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.dashboard {
+  margin-top: 40px;
+  max-width: 581px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-list li {
+  margin: 10px;
+}
+
+.social-list li a {
+  border: 1px solid hsl(0, 7%, 89%);
+  border-radius: 50%;
+  color: hsl(223, 87%, 63%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+}
+
+.social-list li a:hover {
+  background-color: hsl(223, 87%, 63%);
+  border-color: hsl(223, 87%, 63%);
+  color: #fff;
+}
+
+footer p {
+  color: hsl(0, 0%, 59%);
+}
+
+@media screen and (max-width: 650px) {
+  button {
+    margin-top: 20px;
+  }
+  .dashboard {
+    width: 100%;
+    height: auto;
+  }
+}
