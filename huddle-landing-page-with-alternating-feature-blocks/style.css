@@ -14,6 +14,10 @@ h2 {
   font-family: "Poppins", sans-serif;
 }
 
+p {
+  opacity: 0.7;
+}
+
 img {
   max-width: 100%;
 }
@@ -44,9 +48,11 @@ img {
 .flex {
   display: flex;
   align-items: center;
+  /* flex-wrap:wrap; */
 }
 
-.flex > div {
+.flex > div,
+.flex > ul {
   flex: 1;
 }
 
@@ -109,6 +115,12 @@ footer ul li {
   align-items: flex-start;
 }
 
+footer .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 footer .circle {
   border: 1px solid #fff;
   border-radius: 50%;
@@ -125,4 +137,30 @@ footer .circle {
 
 footer p {
   text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+  .flex {
+    flex-direction: column;
+  }
+
+  nav.flex {
+    flex-direction: row;
+  }
+
+  footer ul {
+    padding: 0;
+    width: 100%;
+  }
+
+  footer p {
+    text-align: center;
+  }
+
+  .header-img {
+    margin-top: 30px;
+  }
 }
