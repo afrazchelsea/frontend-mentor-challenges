@@ -48,6 +48,7 @@ img {
 .flex {
   display: flex;
   align-items: center;
+
   /* flex-wrap:wrap; */
 }
 
@@ -62,6 +63,11 @@ header {
   background-position: center center;
   background-color: hsl(193, 100%, 96%);
   padding: 40px 0;
+}
+
+header img {
+  width: 80%;
+  margin-left: 20px;
 }
 
 nav {
@@ -162,5 +168,7 @@ footer p {
 
   .header-img {
     margin-top: 30px;
+    margin-left: 0;
+    width: 100%;
   }
 }
