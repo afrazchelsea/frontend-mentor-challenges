@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: hsl(243, 87%, 12%);
+  font-size: 1.1em;
+  margin: 0;
+}
+
+a {
+  color: #3da08f;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex > div {
+  flex: 1;
+}
+.flex > div:first-child {
+  margin-right: 20px;
+}
+
+.flex > div:last-child {
+  margin-left: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  margin-left: 50px;
+}
+
+nav ul a {
+  font-family: "Raleway", sans-serif;
+  color: hsl(243, 87%, 12%);
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  border: 1px solid hsl(243, 87%, 12%);
+  padding: 15px;
+  flex: 0.7;
+  border-radius: 2px;
+}
+
+button {
+  border: 1px solid hsl(224, 93%, 58%);
+  padding: 15px;
+  border-radius: 2px;
+  flex: 0.3;
+  color: white;
+  background-color: hsl(224, 93%, 58%);
+  margin-left: 15px;
+}
+
+.light-blueish {
+  background-color: hsl(240, 75%, 98%);
+  margin-top: 100px;
+  position: relative;
+  padding: 50px 0;
+}
+
+.light-blueish:before {
+  content: "";
+  background-image: url("./images/bg-curve-desktop.svg");
+  height: 60px;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  top: -60px;
+  left: 0;
+}
+
+.testimonial {
+  background-color: white;
+}
