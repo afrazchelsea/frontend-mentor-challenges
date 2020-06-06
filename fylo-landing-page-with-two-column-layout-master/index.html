@@ -11,6 +11,10 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
   </head>
@@ -42,7 +46,11 @@
             </form>
           </div>
           <div>
-            <img src="./images/illustration-1.svg" alt="" />
+            <img
+              class="illustration"
+              src="./images/illustration-1.svg"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -68,6 +76,7 @@
               <img src="./images/icon-arrow.svg" alt="arrow" />
             </a>
             <div class="testimonial-box">
+              <img src="./images/icon-quotes.svg" alt="test icon" />
               <p>
                 Fylo has improved our team productivity by an order of
                 magnitude. Since making the switch our team has become a
@@ -87,13 +96,17 @@
             </div>
           </div>
           <div>
-            <img src="./images/illustration-2.svg" alt="section-img" />
+            <img
+              class="illustration"
+              src="./images/illustration-2.svg"
+              alt="section-img"
+            />
           </div>
         </div>
       </div>
     </section>
 
-    <section class=".blueish">
+    <section class="blueish">
       <div class="container">
         <div class="flex">
           <div>
@@ -118,7 +131,41 @@
       </div>
     </section>
 
-    Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact Us
-    Terms Privacy
+    <footer>
+      <div class="container">
+        <img src="./images/logo-white.svg" alt="logo" />
+        <div class="flex align-start">
+          <ul>
+            <li>+1-543-123-4567</li>
+            <li>example@huddle.com</li>
+          </ul>
+
+          <ul>
+            <li>About Us</li>
+            <li>Jobs</li>
+            <li>Prices</li>
+            <li>Blog</li>
+          </ul>
+
+          <ul>
+            <li>Contact Us</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+
+          <ul class="social-media">
+            <li>
+              <a class="circle" href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a class="circle" href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a class="circle" href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
