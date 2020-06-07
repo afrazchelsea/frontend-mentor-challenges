@@ -1,0 +1,141 @@
+:root {
+  --dark-violet: hsl(256, 26%, 20%);
+  --greyish-blue: hsl(216, 30%, 68%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-greyish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display|Karla:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--very-dark-violet);
+  font-family: "Karla", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "DM Serif Display", sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+  letter-spacing: 1px;
+  line-height: 1;
+  position: relative;
+  margin: 0;
+  padding-top: 100px;
+}
+
+h1:before {
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 150px;
+}
+
+.btn {
+  padding: 15px 25px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn-reverse {
+  border-color: var(--dark-violet);
+  color: var(--dark-violet);
+}
+
+.container {
+  padding: 20px;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.flex > div {
+  flex: 1;
+}
+
+nav {
+  margin: 30px 0;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 30px;
+}
+
+nav li a {
+  color: var(--dark-greyish-violet);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--dark-violet);
+  color: white;
+  padding: 50px;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+header:after {
+  content: "";
+  background-image: url(./images/bg-pattern-intro-right-desktop.svg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+header::before {
+  content: "";
+  background-image: url(./images/bg-pattern-intro-left-desktop.svg);
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+.fam {
+  margin-bottom: -200px;
+}
+section {
+}
+
+footer {
+}
