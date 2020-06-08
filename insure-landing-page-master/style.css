@@ -20,21 +20,21 @@ body {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: "DM Serif Display", sans-serif;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 4em;
   letter-spacing: 1px;
   line-height: 1;
   position: relative;
   margin: 0;
-  padding-top: 100px;
+  padding-top: 75px;
 }
 
-h1:before {
+.line-top:before {
   content: "";
   background-color: white;
   position: absolute;
@@ -44,11 +44,27 @@ h1:before {
   width: 150px;
 }
 
+.line-violet::before {
+  background-color: var(--dark-violet);
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+p {
+  opacity: 0.8;
+  line-height: 1.7;
+  width: 90%;
+}
+
 .btn {
   padding: 15px 25px;
   border: 2px solid white;
   background-color: transparent;
   color: white;
+  display: inline-block;
+  cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -59,7 +75,7 @@ h1:before {
 }
 
 .container {
-  padding: 20px;
+  padding: 0 20px;
   width: 1200px;
   max-width: 100%;
   margin: 0 auto;
@@ -107,6 +123,10 @@ header {
   margin-bottom: 200px;
 }
 
+header * {
+  z-index: 1;
+}
+
 header:after {
   content: "";
   background-image: url(./images/bg-pattern-intro-right-desktop.svg);
@@ -114,28 +134,143 @@ header:after {
   top: 0;
   right: 0;
   height: 100%;
-  width: 100%;
+  width: 50%;
   background-position: top right;
   background-repeat: no-repeat;
+  z-index: 2;
 }
 
 header::before {
   content: "";
   background-image: url(./images/bg-pattern-intro-left-desktop.svg);
+  background-position: bottom left;
+  background-repeat: no-repeat;
   position: absolute;
   bottom: -50%;
   left: 0;
   height: 100%;
   width: 100%;
-  background-position: bottom left;
-  background-repeat: no-repeat;
+  z-index: 0;
 }
 
 .fam {
+  max-width: 100%;
   margin-bottom: -200px;
 }
-section {
+
+.bg-violet {
+  background-color: var(--dark-violet);
+  padding: 70px;
+  background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  margin: 100px auto;
+}
+
+.bg-violet h2 {
+  font-size: 3em;
+  color: white;
+  padding: 0;
+  width: 65%;
+}
+
+.tiles {
+  margin-top: 65px;
 }
 
 footer {
+  background-color: var(--very-light-gray);
+  padding: 30px 0;
+  background-image: url(./images/bg-pattern-footer-desktop.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer ul.flex li:not(:first-child) {
+  margin-left: 20px;
+}
+
+footer h4 {
+  color: var(--dark-greyish-violet);
+  text-transform: uppercase;
+}
+
+footer li {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+footer li a {
+  color: var(--dark-violet);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.border-bottom {
+  border-bottom: 2px solid var(--greyish-blue);
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  header {
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  header:before,
+  header:after {
+    display: none;
+  }
+
+  .fam {
+    display: inline-block;
+    margin-left: -70px;
+    margin-bottom: -10px;
+    max-width: calc(100% + 140px);
+  }
+
+  .line-top:before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .reverse-mobile {
+    flex-direction: column-reverse;
+  }
+
+  .bg-violet {
+    background-image: url(images/bg-pattern-how-we-work-mobile.svg);
+  }
+
+  .bg-violet h2 {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  footer {
+    background-image: url(images/bg-pattern-footer-mobile.svg);
+    background-size: 100% auto;
+    background-position: top center;
+  }
+  footer .flex div {
+    width: 100%;
+  }
+
+  footer ul.flex {
+    flex-direction: row;
+  }
 }
