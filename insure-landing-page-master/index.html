@@ -17,6 +17,7 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 
     <title>Frontend Mentor | Insure landing page</title>
   </head>
@@ -24,11 +25,20 @@
     <nav>
       <div class="container">
         <div class="flex">
-          <div>
+          <div class="img-wrapper">
             <img src="./images/logo.svg" alt="logo" />
           </div>
 
-          <ul>
+          <button class="hamburger" id="hamburger">
+            <img
+              src="./images/icon-hamburger.svg"
+              alt="hamburger"
+              class="open"
+            />
+            <img class="close" src="./images/icon-close.svg" alt="icon-close" />
+          </button>
+
+          <ul id="menu">
             <li><a href="#">How We Work</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Account</a></li>
